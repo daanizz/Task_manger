@@ -15,7 +15,9 @@ app.use(cors());
 dotenv.config();
 
 app.get("/", (req, res) => {
-    res.send("sda");
+    res.send(
+        "This site is running @ https://frontend-task-manager-beryl.vercel.app/"
+    );
 });
 
 app.use("/login", loginRoute);
